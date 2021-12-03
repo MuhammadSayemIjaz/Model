@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.Model{
+    background-image: url(images/bgImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+}
+.modelDiv{
+    width: 600px;
+    height: 300px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #efecec, #f1ecec);
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.ModelBtn {
+    margin-top: 3rem;
+    padding: 0.9em 2em;
+    border: 2px solid #49A5E9;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ddd;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #000000;
+    cursor: pointer;
+   }
+   
+   .ModelBtn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #49A5E9;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .ModelBtn:hover::before {
+    width: 105%;
+   }
+   
+   .ModelBtn:hover {
+    color: #111;
+   }
+.text{
+    color: #000000;
+    letter-spacing: 10px;
+}
+.modelOver{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(73,166,233,0.5);
+    visibility: hidden;
+}
+.showDisplayModel{
+    visibility: visible;
+    z-index: 10;
+}
+.modelDiv2{
+    width: 600px;   
+    height: 250px;
+}
+.icon{
+    position: relative;
+    top: -33%;
+    right: -44%;
+    outline: none;
+    border: none;
+}
+.fa-times{
+    font-size: 20px;
+    color: rgb(143, 36, 36);
+    cursor: pointer;
+}
+.fa-times:hover{
+    color: #49A5E9;
+}
